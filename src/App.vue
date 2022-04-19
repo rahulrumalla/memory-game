@@ -56,12 +56,21 @@ export default {
     };
   },
   methods: {
-    restartGame() {},
-    shuffleOtters() {},
-    revealOtter() {},
+    restartGame() {
+      //required
+    },
+    shuffleOtters() {
+      //bonus
+    },
+    revealOtter() {
+      //required
+    },
+    loadInitialOtters() {
+      this.images = this.initialOtters;
+    },
   },
   mounted() {
-    this.images = this.initialOtters;
+    this.loadInitialOtters();
   },
 };
 </script>

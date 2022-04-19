@@ -4,8 +4,7 @@ import { createStore } from "vuex";
 const store = createStore({
   state() {
     return {
-      count: 0,
-      images: [
+      otterImages: [
         "./assets/otter_1.jpeg",
         "./assets/otter_2.jpeg",
         "./assets/otter_3.jpeg",
@@ -19,15 +18,11 @@ const store = createStore({
     };
   },
 
-  mutations: {
-    increment(state) {
-      state.count++;
-    }
-  },
+  mutations: {},
 
   getters: {
-    images: (state) => {
-      return state.images;
+    otterImages: (state) => {
+      return state.otterImages;
     }
   }
 });
