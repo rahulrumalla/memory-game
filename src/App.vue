@@ -4,13 +4,13 @@
     <div class="flex justify-center gap-6">
       <button
         class="bg-purple-600 px-4 py-2 rounded text-white"
-        @on="restartGame"
+        @click="restartGame"
       >
         Restart Game
       </button>
       <button
         class="bg-blue-600 px-4 py-2 rounded text-white"
-        @on="shuffleOtters"
+        @click="shuffleOtters"
       >
         Shuffle Otters
       </button>
@@ -21,7 +21,7 @@
           :src="i"
           :alt="idx"
           class="w-60 h-60 object-center object-cover cursor-pointer"
-          @on="revealOtter"
+          @click="revealOtter"
         />
       </div>
     </div>
